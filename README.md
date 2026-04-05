@@ -20,3 +20,33 @@ Berdasarkan diagram yang telah saya buat, berikut adalah detail perluasannya:
 - **Unggas** -> (adalah) -> **Hewan**
 - **Unggas** -> (memiliki) -> **Sayap**
 - **Unggas** -> (makan) -> **Biji-bijian**
+
+## Deskripsi Tugas 3
+Mengubah *Semantic Network* (Jaringan Semantik) menjadi bentuk *Frame*. *Frame* adalah struktur data yang digunakan untuk merepresentasikan pengetahuan dalam bentuk tabel yang terdiri dari **Slot** (Atribut) dan **Filler** (Nilai/Isi).
+
+## Penjelasan Frame (Tugas 3)
+Berdasarkan diagram *Semantic Network Example*, berikut adalah representasi *Frame*-nya:
+
+1. **Frame: Bird**
+   - **ISA**: Animal
+   - **Has-part**: Wing, Tail, Feather
+   - **Eats**: Seeds
+   - **Can**: Fly
+
+2. **Frame: Mammal**
+   - **ISA**: Animal
+   - **Has-part**: Tail
+   - **Subclasses**: Cat, Dog
+
+3. **Frame: Cat**
+   - **ISA**: Mammal
+   - **Eats**: Cat Food
+   - **Instances**: Garfield, Sylvester
+
+4. **Frame: Garfield**
+   - **INST**: Cat
+   - **Eats**: Lasagna
+
+5. **Frame: Penguin**
+   - **ISA**: Bird
+   - **Cannot**: Fly
