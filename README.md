@@ -27,26 +27,43 @@ Mengubah *Semantic Network* (Jaringan Semantik) menjadi bentuk *Frame*. *Frame* 
 ## Penjelasan Frame (Tugas 3)
 Berdasarkan diagram *Semantic Network Example*, berikut adalah representasi *Frame*-nya:
 
+## Deskripsi Tugas 3
+Mengubah *Semantic Network* (Jaringan Semantik) menjadi bentuk *Frame*. *Frame* adalah struktur data untuk merepresentasikan pengetahuan dalam bentuk tabel (**Slot** dan **Filler**).
+
+## Penjelasan Frame Berdasarkan Diagram
+Berikut adalah detail *Frame* yang diekstrak dari *Semantic Network Example*:
+
 1. **Frame: Bird**
    - **ISA**: Animal
    - **Has-part**: Wing, Tail, Feather
    - **Eats**: Seeds
    - **Can**: Fly
 
-2. **Frame: Mammal**
+2. **Frame: Penguin**
+   - **ISA**: Bird
+   - **Cannot**: Fly
+   - **Instances**: Opus
+
+3. **Frame: Opus**
+   - **INST**: Penguin
+
+4. **Frame: Canary**
+   - **ISA**: Bird, Pet
+   - **Instances**: Tweety
+
+5. **Frame: Tweety**
+   - **INST**: Canary
+
+6. **Frame: Mammal**
    - **ISA**: Animal
    - **Has-part**: Tail
    - **Subclasses**: Cat, Dog
 
-3. **Frame: Cat**
+7. **Frame: Cat**
    - **ISA**: Mammal
    - **Eats**: Cat Food
    - **Instances**: Garfield, Sylvester
 
-4. **Frame: Garfield**
+8. **Frame: Garfield**
    - **INST**: Cat
    - **Eats**: Lasagna
-
-5. **Frame: Penguin**
-   - **ISA**: Bird
-   - **Cannot**: Fly
